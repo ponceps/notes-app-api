@@ -22,9 +22,11 @@ provider:
   #environment: ${file(env.yml):${self:provider.stage}}
 
 functions:
-  hello:
-    handler: handler.hello
+  create:
+    handler: create.hello
     events:
       - http:
-          path: hello
-          method: get
+          path: notes
+          method: post
+          cors: true
+          authorizer: aws_iam

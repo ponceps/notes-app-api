@@ -16,5 +16,8 @@
     "serverless-bundle": "^1.2.2",
     "serverless-offline": "^5.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aws-sdk": "^2.542.0",
+    "uuid": "^3.3.3"
+  }
 }

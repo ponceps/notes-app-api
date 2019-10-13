@@ -20,8 +20,8 @@ provider:
   # the following line. Also, make sure to not
   # commit your .env.
   #
-  #environment:
-  #  sampleEnvVar: ${env:SAMPLE_ENV_VAR}
+  environment:
+    tableName: notes
 
 iamRoleStatements:
   - Effect: Allow

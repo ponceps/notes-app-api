@@ -24,6 +24,11 @@ provider:
     tableName: notes
     stripeSecretKey: ${env:STRIPE_SECRET_KEY}
 
+# Create our resources with separate CloudFormation templates
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
+
 iamRoleStatements:
   - Effect: Allow
     Action: 

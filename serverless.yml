@@ -86,10 +86,10 @@ functions:
     handler: billing.main
     events:
       - http:
-        path: billing
-        method: post
-        cors: true
-        authorizer: aws_iam
+          path: billing
+          method: post
+          cors: true
+          authorizer: aws_iam
 
 # Create our resources with separate CloudFormation templates
 resources:
